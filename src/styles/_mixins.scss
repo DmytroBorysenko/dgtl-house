@@ -1,0 +1,82 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+// Responsive breakpoint
+@mixin respond($device) {
+  @media (min-width: map.get($breakpoints, $device)) {
+    @content;
+  }
+}
+
+// Container
+@mixin container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @include respond(md) {
+    max-width: 1024px;
+  }
+
+  @include respond(lg) {
+    max-width: 1280px;
+  }
+
+  @include respond(xl) {
+    max-width: 1440px;
+  }
+}
+
+// Fluid property (clamp between min/max based on viewport)
+@mixin fluid($property, $min, $max, $min-vw: 480px, $max-vw: 1440px) {
+  & {
+    #{$property}: clamp(
+      #{$min},
+      calc(#{$min} + (#{$max} - #{$min}) * ((100vw - #{$min-vw}) / (#{$max-vw} - #{$min-vw}))),
+      #{$max}
+    );
+  }
+}
+
+// Gradient border top & bottom
+@mixin gradient-border-top-bottom($width: 1px) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: $width;
+    background: var(--border-gradient);
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: $width;
+    background: var(--border-gradient);
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+// Font mixins
+@mixin font-regular {
+  letter-spacing: 0.02em;
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-normal {
+  letter-spacing: 0.02em;
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 530;
+}
+
+@mixin font-bold {
+  letter-spacing: 0.03em;
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 800;
+}
