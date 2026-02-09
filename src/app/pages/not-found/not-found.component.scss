@@ -1,0 +1,39 @@
+@use 'sass:map';
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+:host {
+  display: block;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.title {
+  @include font-bold;
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+  color: map.get($colors, error);
+
+  @include respond(sm) {
+    font-size: 3rem;
+  }
+}
+
+.description {
+  font-size: 1.125rem;
+  margin: 0 0 2rem;
+  color: map.get($colors, primary);
+}
+
+
