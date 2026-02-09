@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'sass:map';
+@use 'styles/fonts';
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+html {
+  font-size: 0.75rem; // 12px — mobile
+
+  @include respond(md) {
+    font-size: 0.8125rem; // 13px — 1024px+
+  }
+
+  @include respond(lg) {
+    font-size: 0.875rem; // 14px — 1280px+
+  }
+
+  @include respond(xl) {
+    font-size: 0.9375rem; // 15px — 1440px+
+  }
+}
+
+:root {
+  --border-gradient: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      #d9d9d9 51.92%,
+      rgba(255, 255, 255, 0.05) 100%
+  );
+}
+
+body {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 400;
+  color: map.get($colors, white);
+  background: map.get($colors, black);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  @include container;
+  @include fluid(padding-top, 84px, 118px);
+}
+
+.colorSection {
+  background-color: map.get($colors, primary);
+  border-radius: 20px;
+
+  @include respond(lg) {
+    border-radius: 60px;
+  }
+}
+
+.langSwitcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+}

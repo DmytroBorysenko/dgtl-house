@@ -1,0 +1,23 @@
+$colors: (
+  primary: #048b94,
+  primary-hover: #05a0aa,
+  black: #020202,
+  bg: #0a0a0a,
+  card-bg: #202227,
+  border: #353840,
+  gray: #424242,
+  gray-1: #7b7b7b,
+  gray-2: #bcbcbc,
+  gray-text: #c8c8c8,
+  text-secondary: #999,
+  white: #fff,
+  error: #ff6347,
+);
+
+$breakpoints: (
+  xs: 480px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1440px,
+);
