@@ -28,6 +28,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.SSH_HOST }}
           REMOTE_USER: ${{ secrets.SSH_USER }}
           REMOTE_PORT: ${{ secrets.SSH_PORT }}
+          SSH_CMD_ARGS: -o IdentitiesOnly=yes -o PasswordAuthentication=no
           SOURCE: dist/dgtl-house2/browser/
           TARGET: ${{ secrets.SSH_TARGET_DIR }}
           ARGS: -rlgoDzvc --delete
