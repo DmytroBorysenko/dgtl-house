@@ -3,6 +3,13 @@
 @use 'styles/variables' as *;
 @use 'styles/mixins' as *;
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 0.75rem; // 12px — mobile
 
@@ -29,12 +36,18 @@ html {
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: 'PP Neue Montreal', sans-serif;
   font-weight: 400;
   color: map.get($colors, white);
   background: map.get($colors, black);
   line-height: 1.5;
   scroll-behavior: smooth;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 a {
@@ -58,11 +71,4 @@ ul {
   @include respond(lg) {
     border-radius: 60px;
   }
-}
-
-.langSwitcher {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 999;
 }

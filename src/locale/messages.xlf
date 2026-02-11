@@ -2,6 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="app.title" datatype="html">
+        <source>DGTL House — Digital Marketing Agency</source>
+      </trans-unit>
       <trans-unit id="home.title" datatype="html">
         <source>Hello</source>
       </trans-unit>
@@ -10,6 +13,33 @@
       </trans-unit>
       <trans-unit id="contact.title" datatype="html">
         <source>Contact</source>
+      </trans-unit>
+      <trans-unit id="footer.subtitle" datatype="html">
+        <source>Digital Marketing Agency</source>
+      </trans-unit>
+      <trans-unit id="footer.privacyPolicy" datatype="html">
+        <source>Privacy Policy</source>
+      </trans-unit>
+      <trans-unit id="home.meta.title" datatype="html">
+        <source>DGTL House — Digital Marketing Agency</source>
+      </trans-unit>
+      <trans-unit id="home.meta.description" datatype="html">
+        <source>DGTL House is a digital marketing agency that helps businesses grow online.</source>
+      </trans-unit>
+      <trans-unit id="about.meta.title" datatype="html">
+        <source>About Us — DGTL House</source>
+      </trans-unit>
+      <trans-unit id="about.meta.description" datatype="html">
+        <source>Learn about DGTL House — our team, mission, and values.</source>
+      </trans-unit>
+      <trans-unit id="contact.meta.title" datatype="html">
+        <source>Contact — DGTL House</source>
+      </trans-unit>
+      <trans-unit id="contact.meta.description" datatype="html">
+        <source>Get in touch with DGTL House. We are ready to help your business grow.</source>
+      </trans-unit>
+      <trans-unit id="notFound.meta.title" datatype="html">
+        <source>Page Not Found — DGTL House</source>
       </trans-unit>
       <trans-unit id="notFound.title" datatype="html">
         <source>Page not found</source>

@@ -1,0 +1,109 @@
+@use 'sass:map';
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+:host {
+  display: block;
+}
+
+.wrap {
+  padding: 3.5rem 1rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: map.get($colors, white);
+
+  @include respond(xs) {
+    padding: 7rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.left-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(xs) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.3125rem;
+  }
+}
+
+.title {
+  @include font-bold;
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+  @include respond(xs) {
+    font-size: 2rem;
+  }
+}
+
+.sub-title {
+  @include font-regular;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.6;
+
+  @include respond(xs) {
+    font-size: 1.5rem;
+    opacity: 1;
+  }
+}
+
+.footer-links {
+  display: none;
+
+  @include respond(xs) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.footer-link {
+  @include font-regular;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: map.get($colors, white);
+  text-decoration: underline;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include respond(xs) {
+    width: 330px;
+  }
+
+  .email p,
+  .phone p,
+  .address p {
+    @include font-regular;
+    font-size: 1.125rem;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+
+    span {
+      @include font-normal;
+    }
+  }
+}
+
+.mobile-footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  @include respond(xs) {
+    display: none;
+  }
+}
