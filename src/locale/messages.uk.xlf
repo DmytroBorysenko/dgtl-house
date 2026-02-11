@@ -2,6 +2,10 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" target-language="uk" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="app.title" datatype="html">
+        <source>DGTL House — Digital Marketing Agency</source>
+        <target>DGTL House — Агенція цифрового маркетингу</target>
+      </trans-unit>
       <trans-unit id="home.title" datatype="html">
         <source>Hello</source>
         <target>Привіт</target>

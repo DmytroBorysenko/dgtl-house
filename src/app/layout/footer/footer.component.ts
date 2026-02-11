@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SiteService } from '../../core/services/site.service';
 
 @Component({
   selector: 'dgtl-footer',
@@ -9,10 +10,5 @@ import { RouterLink } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent {
-  protected readonly siteInfo = {
-    email: 'marketing@dgtl-house.com',
-    phone: '+1 224 584 8401',
-    phoneTel: '+12245848401',
-    address: '1635 Eagle Grove ct, Wheeling, IL 60090',
-  };
+  protected readonly siteInfo = inject(SiteService).siteInfo;
 }

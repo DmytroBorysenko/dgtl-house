@@ -10,15 +10,15 @@
   <address class="right-block">
     <div class="email">
       <p>E.</p>
-      <p><a href="mailto:{{ siteInfo.email }}">{{ siteInfo.email }}</a></p>
+      <p><a href="mailto:{{ siteInfo().email }}">{{ siteInfo().email }}</a></p>
     </div>
     <div class="phone">
       <p>M.</p>
-      <p><a href="tel:{{ siteInfo.phoneTel }}">{{ siteInfo.phone }}</a></p>
+      <p><a href="tel:{{ siteInfo().phoneTel }}">{{ siteInfo().phone }}</a></p>
     </div>
     <div class="address">
       <p>A.</p>
-      <p>{{ siteInfo.address }}</p>
+      <p>{{ siteInfo().address }}</p>
     </div>
   </address>
 
