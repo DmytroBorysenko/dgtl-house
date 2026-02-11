@@ -1,11 +1,15 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import {HeroComponent} from './components/hero/hero.component';
 
 @Component({
   selector: 'dgtl-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    HeroComponent
+  ]
 })
 export class HomeComponent {
   readonly #title = inject(Title);

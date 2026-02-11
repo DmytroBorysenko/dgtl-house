@@ -10,6 +10,12 @@
         <source>Hello</source>
         <target>Привіт</target>
       </trans-unit>
+      <trans-unit id="home.hero.title" datatype="html">
+        <source>Агентство цифрового маркетингу</source>
+      </trans-unit>
+      <trans-unit id="home.hero.description" datatype="html">
+        <source>Ви завжди можете стати кращими, досягати вищих результатів і перевершувати очікування з нашими передовими інструментами штучного інтелекту та глибокою експертизою в усіх етапах цифрового маркетингу. Ми надаємо можливість клієнтам збільшувати доходи, підвищувати видимість і лояльність бренду, а також ефективно розширювати свою клієнтську базу.</source>
+      </trans-unit>
       <trans-unit id="about.title" datatype="html">
         <source>About us</source>
         <target>Про нас</target>
