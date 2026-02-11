@@ -8,6 +8,12 @@
       <trans-unit id="home.title" datatype="html">
         <source>Hello</source>
       </trans-unit>
+      <trans-unit id="home.hero.title" datatype="html">
+        <source>A full-funnel digital marketing agency</source>
+      </trans-unit>
+      <trans-unit id="home.hero.description" datatype="html">
+        <source>You can always be a better, reach higher results, and exceed expectations with our advanced AI tools and deep expertise across the digital marketing funnel. We empower clients to enhance revenue, boost brand visibility and loyalty, and grow their customer base effectively</source>
+      </trans-unit>
       <trans-unit id="about.title" datatype="html">
         <source>About us</source>
       </trans-unit>
