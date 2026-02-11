@@ -6,6 +6,14 @@
         <source>Hello</source>
         <target>Привіт</target>
       </trans-unit>
+      <trans-unit id="about.title" datatype="html">
+        <source>About us</source>
+        <target>Про нас</target>
+      </trans-unit>
+      <trans-unit id="contact.title" datatype="html">
+        <source>Contact</source>
+        <target>Контакти</target>
+      </trans-unit>
       <trans-unit id="notFound.title" datatype="html">
         <source>Page not found</source>
         <target>Сторінку не знайдено</target>

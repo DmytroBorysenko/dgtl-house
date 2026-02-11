@@ -5,6 +5,12 @@
       <trans-unit id="home.title" datatype="html">
         <source>Hello</source>
       </trans-unit>
+      <trans-unit id="about.title" datatype="html">
+        <source>About us</source>
+      </trans-unit>
+      <trans-unit id="contact.title" datatype="html">
+        <source>Contact</source>
+      </trans-unit>
       <trans-unit id="notFound.title" datatype="html">
         <source>Page not found</source>
       </trans-unit>
