@@ -1,0 +1,39 @@
+@use 'sass:map';
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+:host {
+  display: block;
+  .hero-block {
+    padding: 16px 16px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include respond(lg) {
+      padding: 32px 32px 100px;
+    }
+
+    .title {
+      @include fluid(font-size, 60px, 170px);
+      line-height: 0.8;
+      font-weight: 400;
+      max-width: 100%;
+
+      @include respond(lg) {
+        max-width: 90%;
+      }
+    }
+
+    .description {
+      line-height: 1.2;
+      max-width: 100%;
+
+      @include respond(md) {
+        line-height: 1.5;
+        font-size: 24px;
+        max-width: 950px;
+      }
+    }
+  }
+}

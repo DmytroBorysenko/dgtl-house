@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, computed, inject, LOCALE_ID, signal } from '@angular/core';
-import { Router } from '@angular/router';
-import { LANG_OPTIONS } from '../../core/constants/lang.constants';
-import { LangOption } from '../../core/models/lang-option.interface';
+import {ChangeDetectionStrategy, Component, computed, inject, LOCALE_ID, signal} from '@angular/core';
+import {Router} from '@angular/router';
+import {LANG_OPTIONS} from '../../core/constants/lang.constants';
+import {LangOption} from '../../core/models/lang-option.interface';
 
 @Component({
   selector: 'dgtl-lang-switcher',
