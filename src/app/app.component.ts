@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from './layout/footer/footer.component';
+import { LangSwitcherComponent } from './layout/lang-switcher/lang-switcher.component';
+import { SiteService } from './core/services/site.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FooterComponent, LangSwitcherComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'dgtl-house2';
+  readonly #siteService = inject(SiteService);
+
+  constructor() {
+    this.#siteService.loadInfo();
+  }
 }

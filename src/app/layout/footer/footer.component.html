@@ -1,0 +1,28 @@
+<footer class="wrap">
+  <div class="left-block">
+    <p class="title">.dgtl - house</p>
+    <p class="sub-title" i18n="@@footer.subtitle">Digital Marketing Agency</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a routerLink="/privacy-policy" class="footer-link" i18n="@@footer.privacyPolicy">Privacy Policy</a>
+    </nav>
+  </div>
+
+  <address class="right-block">
+    <div class="email">
+      <p>E.</p>
+      <p><a href="mailto:{{ siteInfo().email }}">{{ siteInfo().email }}</a></p>
+    </div>
+    <div class="phone">
+      <p>M.</p>
+      <p><a href="tel:{{ siteInfo().phoneTel }}">{{ siteInfo().phone }}</a></p>
+    </div>
+    <div class="address">
+      <p>A.</p>
+      <p>{{ siteInfo().address }}</p>
+    </div>
+  </address>
+
+  <nav class="mobile-footer-links" aria-label="Footer navigation">
+    <a routerLink="/privacy-policy" class="footer-link" i18n="@@footer.privacyPolicy">Privacy Policy</a>
+  </nav>
+</footer>
