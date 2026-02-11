@@ -14,6 +14,42 @@
         <source>Contact</source>
         <target>Контакти</target>
       </trans-unit>
+      <trans-unit id="footer.subtitle" datatype="html">
+        <source>Digital Marketing Agency</source>
+        <target>Агенція цифрового маркетингу</target>
+      </trans-unit>
+      <trans-unit id="footer.privacyPolicy" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Політика конфіденційності</target>
+      </trans-unit>
+      <trans-unit id="home.meta.title" datatype="html">
+        <source>DGTL House — Digital Marketing Agency</source>
+        <target>DGTL House — Агенція цифрового маркетингу</target>
+      </trans-unit>
+      <trans-unit id="home.meta.description" datatype="html">
+        <source>DGTL House is a digital marketing agency that helps businesses grow online.</source>
+        <target>DGTL House — агенція цифрового маркетингу, яка допомагає бізнесу зростати онлайн.</target>
+      </trans-unit>
+      <trans-unit id="about.meta.title" datatype="html">
+        <source>About Us — DGTL House</source>
+        <target>Про нас — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="about.meta.description" datatype="html">
+        <source>Learn about DGTL House — our team, mission, and values.</source>
+        <target>Дізнайтесь більше про DGTL House — нашу команду, місію та цінності.</target>
+      </trans-unit>
+      <trans-unit id="contact.meta.title" datatype="html">
+        <source>Contact — DGTL House</source>
+        <target>Контакти — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="contact.meta.description" datatype="html">
+        <source>Get in touch with DGTL House. We are ready to help your business grow.</source>
+        <target>Зв'яжіться з DGTL House. Ми готові допомогти вашому бізнесу зростати.</target>
+      </trans-unit>
+      <trans-unit id="notFound.meta.title" datatype="html">
+        <source>Page Not Found — DGTL House</source>
+        <target>Сторінку не знайдено — DGTL House</target>
+      </trans-unit>
       <trans-unit id="notFound.title" datatype="html">
         <source>Page not found</source>
         <target>Сторінку не знайдено</target>
