@@ -1,0 +1,31 @@
+<div class="switcher">
+  <button
+    type="button"
+    class="switcher-btn"
+    [class.open]="isOpen()"
+    [attr.aria-expanded]="isOpen()"
+    aria-haspopup="listbox"
+    (click)="toggle()"
+  >
+    <img class="flag" [src]="selectedLang().flag" [alt]="selectedLang().label" width="20" height="20">
+    <span>{{ selectedLang().label }}</span>
+  </button>
+
+  @if (isOpen()) {
+    <div class="switcher-dropdown" role="listbox">
+      @for (lang of options; track lang.value) {
+        @if (lang.value !== selectedLang().value) {
+          <a
+            [href]="getLocaleUrl(lang)"
+            class="switcher-option"
+            role="option"
+            [attr.aria-label]="'Switch to ' + lang.label"
+          >
+            <img class="flag" [src]="lang.flag" [alt]="lang.label" width="20" height="20">
+            <span>{{ lang.label }}</span>
+          </a>
+        }
+      }
+    </div>
+  }
+</div>
