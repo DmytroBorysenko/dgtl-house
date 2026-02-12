@@ -25,7 +25,7 @@
             <img
               class="arrow-icon"
               [class.rotated]="isSubmenuOpen(i)"
-              src="/assets/img/arrow.svg"
+              src="assets/img/arrow.svg"
               alt=""
               width="9"
               height="9"
@@ -48,7 +48,7 @@
                         <div class="title">
                           <img
                             class="icon"
-                            [src]="'/assets/img/' + child.icon + '.svg'"
+                            [src]="'assets/img/' + child.icon + '.svg'"
                             [alt]="child.name"
                             width="16"
                             height="16"
@@ -59,7 +59,7 @@
                       </div>
                       <img
                         class="menu-arrow"
-                        src="/assets/img/menu-arrow-right.svg"
+                        src="assets/img/menu-arrow-right.svg"
                         alt=""
                         width="20"
                         height="20"
@@ -84,7 +84,7 @@
         aria-label="Toggle menu"
         i18n-aria-label="@@nav.ariaToggleMenu"
       >
-        <img src="/assets/img/burger-menu.svg" alt="" width="24" height="24">
+        <img src="assets/img/burger-menu.svg" alt="" width="24" height="24">
       </button>
 
       <span class="active-link">{{ activePage() }}</span>
@@ -102,7 +102,7 @@
               aria-label="Close menu"
               i18n-aria-label="@@nav.ariaCloseMenu"
             >
-              <img src="/assets/img/cross.svg" alt="" width="24" height="24">
+              <img src="assets/img/cross.svg" alt="" width="24" height="24">
             </button>
           </div>
 
@@ -126,7 +126,7 @@
                       >
                         <img
                           [class.rotated]="isSubmenuOpen(i)"
-                          src="/assets/img/arrow.svg"
+                          src="assets/img/arrow.svg"
                           alt=""
                           width="12"
                           height="12"
@@ -143,7 +143,7 @@
                             <div class="title">
                               <img
                                 class="icon"
-                                [src]="'/assets/img/' + child.icon + '.svg'"
+                                [src]="'assets/img/' + child.icon + '.svg'"
                                 [alt]="child.name"
                                 width="16"
                                 height="16"
@@ -159,7 +159,7 @@
                           <a [routerLink]="child.path" (click)="closeMobileMenu()">
                             <img
                               class="menu-arrow"
-                              src="/assets/img/arrow.svg"
+                              src="assets/img/arrow.svg"
                               alt=""
                               width="12"
                               height="12"

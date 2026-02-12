@@ -1,7 +1,8 @@
-import {ChangeDetectionStrategy, Component, computed, inject, LOCALE_ID, signal} from '@angular/core';
-import {Router} from '@angular/router';
-import {LANG_OPTIONS} from '../../core/constants/lang.constants';
-import {LangOption} from '../../core/models/lang-option.interface';
+import { ChangeDetectionStrategy, Component, computed, inject, LOCALE_ID, signal } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Router } from '@angular/router';
+import { LANG_OPTIONS } from '../../core/constants/lang.constants';
+import { LangOption } from '../../core/models/lang-option.interface';
 
 @Component({
   selector: 'dgtl-lang-switcher',
@@ -12,6 +13,7 @@ import {LangOption} from '../../core/models/lang-option.interface';
 export class LangSwitcherComponent {
   readonly #locale = inject(LOCALE_ID);
   readonly #router = inject(Router);
+  readonly #doc = inject(DOCUMENT);
 
   readonly options = LANG_OPTIONS;
   readonly isOpen = signal(false);
@@ -28,20 +30,28 @@ export class LangSwitcherComponent {
     const current = this.selectedLang();
     if (target.value === current.value) return '';
 
-    let path = this.#router.url;
+    const routePath = this.#router.url;
+    const deployBase = this.#getDeployBase();
+    const targetLocale = target.path ? target.path.slice(1) : '';
 
-    // Strip current locale prefix
-    if (current.path && path.startsWith(current.path + '/')) {
-      path = path.substring(current.path.length);
-    } else if (current.path && path === current.path) {
-      path = '/';
+    if (targetLocale) {
+      return deployBase + targetLocale + (routePath === '/' ? '' : routePath);
     }
 
-    // Add target locale prefix
-    if (target.path) {
-      return target.path + (path === '/' ? '' : path);
+    return deployBase.slice(0, -1) + (routePath === '/' ? '/' : routePath);
+  }
+
+  #getDeployBase(): string {
+    const baseHref = this.#doc.querySelector('base')?.getAttribute('href') || '/';
+    const currentPath = this.selectedLang().path;
+
+    if (currentPath) {
+      const suffix = currentPath.slice(1) + '/';
+      if (baseHref.endsWith(suffix)) {
+        return baseHref.slice(0, -suffix.length);
+      }
     }
 
-    return path || '/';
+    return baseHref;
   }
 }

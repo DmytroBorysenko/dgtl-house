@@ -27,10 +27,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npx ng build
-
-      - name: Set base href for GitHub Pages
-        run: find dist/dgtl-house2/browser -name '*.html' -exec sed -i 's|<base href="/">|<base href="/dgtl-house/">|g' {} +
+      - run: npx ng build --base-href /dgtl-house/
 
       - uses: actions/upload-pages-artifact@v3
         with:
