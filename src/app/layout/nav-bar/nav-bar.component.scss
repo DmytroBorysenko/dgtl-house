@@ -1,0 +1,326 @@
+@use 'sass:map';
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+:host {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  z-index: 99;
+}
+
+// Header bar
+.nav {
+  padding: 1.125rem 1rem;
+  background-color: map.get($colors, black);
+  transition: padding 0.3s ease-in-out;
+
+  @include respond(sm) {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  @include font-bold;
+  font-size: 1.1875rem;
+  line-height: 1.5;
+  color: map.get($colors, white);
+
+  @include respond(sm) {
+    font-size: 1.3125rem;
+  }
+}
+
+// ─── Desktop nav ────────────────────────────────────────
+
+.nav-list {
+  display: none;
+
+  @include respond(sm) {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border: 1px solid map.get($colors, gray);
+    border-radius: 100px;
+    padding: 0.375rem 0.375rem 0.375rem 1.5rem;
+    position: relative;
+  }
+}
+
+.nav-item {
+  a.name {
+    color: map.get($colors, white);
+    @include font-regular;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+    &:hover,
+    &.active {
+      padding-bottom: 2px;
+      border-bottom: 2px solid map.get($colors, white);
+    }
+  }
+
+  .arrow-icon {
+    transition: transform 0.3s ease;
+    width: 9px;
+    margin: 0 0 0.25rem 0.3125rem;
+
+    &.rotated {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &.has-children a.name {
+    padding-bottom: 10px;
+  }
+
+  // CTA button — last nav item
+  &:last-child {
+    background-color: map.get($colors, primary);
+    border-radius: 100px;
+    padding: 0.625rem 1.5rem;
+
+    a.name {
+      &:hover,
+      &.active {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+// ─── Desktop submenu ────────────────────────────────────
+
+.sub-menu-overlay {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background-color: transparent;
+}
+
+.sub-menu {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0.25rem 1rem;
+  background-color: map.get($colors, card-bg);
+  border-radius: 24px;
+  box-shadow: 0 4px 12px 0 rgba(28, 45, 64, 0.06);
+
+  &.multi-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem 1.5rem;
+  }
+}
+
+.sub-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+  border-bottom: 1px solid map.get($colors, border);
+  padding: 0.75rem 0.25rem 0.75rem 0;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-width: 18.75rem;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+
+  .icon {
+    width: 16px;
+  }
+
+  .child-name {
+    color: map.get($colors, white);
+    @include font-regular;
+    font-size: 1rem;
+    line-height: 1.375;
+  }
+
+  .desc {
+    color: map.get($colors, gray-text);
+    @include font-regular;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    margin-left: 22px;
+  }
+
+  .menu-arrow {
+    height: 20px;
+  }
+}
+
+// ─── Mobile nav bar ─────────────────────────────────────
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid map.get($colors, gray);
+  border-radius: 100px;
+  padding: 0.1875rem 0.1875rem 0.1875rem 1.4375rem;
+
+  @include respond(sm) {
+    display: none;
+  }
+}
+
+.burger-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.active-link {
+  color: map.get($colors, white);
+  @include font-normal;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  border-bottom: 1px solid map.get($colors, white);
+
+  @include respond(xs) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.cta-link {
+  color: map.get($colors, white);
+  @include font-normal;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  padding: 0.625rem 1.5rem;
+  background-color: map.get($colors, primary);
+  border-radius: 100px;
+
+  @include respond(xs) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+// ─── Mobile drawer ──────────────────────────────────────
+
+.mobile-drawer {
+  position: fixed;
+  inset: 0;
+  background: map.get($colors, black);
+  padding: 2.1875rem 1rem;
+  overflow: auto;
+  z-index: 100;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-btn {
+  display: flex;
+  padding: 0.9375rem 1.8125rem;
+  background-color: map.get($colors, primary);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav-list {
+  margin-top: 45px;
+
+  li {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mobile-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a.name {
+    color: map.get($colors, white);
+    @include font-regular;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+.submenu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+
+  img {
+    transition: transform 0.3s ease;
+
+    &.rotated {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+// ─── Mobile submenu ─────────────────────────────────────
+
+.mobile-sub-menu {
+  margin-top: 10px;
+  border-top: 1px solid map.get($colors, white);
+
+  .sub-nav-item {
+    flex-direction: row;
+    padding: 0.75rem 0;
+
+    .desc {
+      margin-left: 28px;
+    }
+
+    .menu-arrow {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

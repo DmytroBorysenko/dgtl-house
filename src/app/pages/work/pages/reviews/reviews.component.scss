@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+:host {
+  display: block;
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 1rem;
+  text-align: center;
+
+  h1 {
+    @include font-bold;
+    font-size: 2.5rem;
+
+    @include respond(sm) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .subtitle {
+    @include font-regular;
+    font-size: 1.25rem;
+    color: map.get($colors, primary);
+  }
+}

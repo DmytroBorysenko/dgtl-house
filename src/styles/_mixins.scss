@@ -10,8 +10,13 @@
 
 // Container
 @mixin container {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
+  padding-inline: 1rem;
+
+  @include respond(sm) {
+    padding-inline: 2rem;
+  }
 
   @include respond(md) {
     max-width: 1024px;
@@ -28,13 +33,11 @@
 
 // Fluid property (clamp between min/max based on viewport)
 @mixin fluid($property, $min, $max, $min-vw: 480px, $max-vw: 1440px) {
-  & {
-    #{$property}: clamp(
-      #{$min},
-      calc(#{$min} + (#{$max} - #{$min}) * ((100vw - #{$min-vw}) / (#{$max-vw} - #{$min-vw}))),
-      #{$max}
-    );
-  }
+  #{$property}: clamp(
+    #{$min},
+    calc(#{$min} + (#{$max} - #{$min}) * ((100vw - #{$min-vw}) / (#{$max-vw} - #{$min-vw}))),
+    #{$max}
+  );
 }
 
 // Gradient border top & bottom

@@ -60,8 +60,8 @@ ul {
 }
 
 .section {
-  @include container;
   @include fluid(padding-top, 84px, 118px);
+  @include container;
 }
 
 .colorSection {

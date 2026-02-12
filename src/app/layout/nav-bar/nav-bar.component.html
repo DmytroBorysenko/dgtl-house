@@ -1,0 +1,180 @@
+<header class="nav">
+  <div class="nav-row">
+    <a routerLink="/" class="logo">.dgtl-house</a>
+
+    <!-- Desktop navigation -->
+    <nav
+      class="nav-list"
+      aria-label="Main navigation"
+      i18n-aria-label="@@nav.ariaMainNav"
+    >
+      @for (item of menuList; track item.path; let i = $index) {
+        <div
+          class="nav-item"
+          [class.has-children]="item.children?.length"
+          (mouseenter)="item.children?.length ? openSubmenu(i) : undefined"
+        >
+          <a
+            class="name"
+            [routerLink]="item.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+          >{{ item.name }}</a>
+
+          @if (item.children?.length) {
+            <img
+              class="arrow-icon"
+              [class.rotated]="isSubmenuOpen(i)"
+              src="assets/img/arrow.svg"
+              alt=""
+              width="9"
+              height="9"
+            >
+
+            <div class="sub-menu-overlay">
+              @if (isSubmenuOpen(i)) {
+                <ul
+                  class="sub-menu"
+                  [class.multi-column]="item.children!.length > 6"
+                  role="menu"
+                >
+                  @for (child of item.children; track child.path) {
+                    <li
+                      class="sub-nav-item"
+                      role="menuitem"
+                      (click)="navigateTo(child.path)"
+                    >
+                      <div class="info">
+                        <div class="title">
+                          <img
+                            class="icon"
+                            [src]="'assets/img/' + child.icon + '.svg'"
+                            [alt]="child.name"
+                            width="16"
+                            height="16"
+                          >
+                          <span class="child-name">{{ child.name }}</span>
+                        </div>
+                        <p class="desc">{{ child.desc }}</p>
+                      </div>
+                      <img
+                        class="menu-arrow"
+                        src="assets/img/menu-arrow-right.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                      >
+                    </li>
+                  }
+                </ul>
+              }
+            </div>
+          }
+        </div>
+      }
+    </nav>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-menu">
+      <button
+        type="button"
+        class="burger-btn"
+        (click)="toggleMobileMenu()"
+        [attr.aria-expanded]="isMobileMenuOpen()"
+        aria-label="Toggle menu"
+        i18n-aria-label="@@nav.ariaToggleMenu"
+      >
+        <img src="assets/img/burger-menu.svg" alt="" width="24" height="24">
+      </button>
+
+      <span class="active-link">{{ activePage() }}</span>
+
+      <a [routerLink]="mobileCta().path" class="cta-link">{{ mobileCta().label }}</a>
+
+      @if (isMobileMenuOpen()) {
+        <div class="mobile-drawer" role="dialog" aria-modal="true">
+          <div class="drawer-header">
+            <a routerLink="/" class="logo" (click)="closeMobileMenu()">.dgtl-house</a>
+            <button
+              type="button"
+              class="close-btn"
+              (click)="toggleMobileMenu()"
+              aria-label="Close menu"
+              i18n-aria-label="@@nav.ariaCloseMenu"
+            >
+              <img src="assets/img/cross.svg" alt="" width="24" height="24">
+            </button>
+          </div>
+
+          <nav aria-label="Mobile navigation" i18n-aria-label="@@nav.ariaMobileNav">
+            <ul class="mobile-nav-list">
+              @for (item of menuList; track item.path; let i = $index) {
+                <li>
+                  <div class="mobile-nav-row">
+                    <a
+                      class="name"
+                      [routerLink]="item.path"
+                      (click)="closeMobileMenu()"
+                    >{{ item.name }}</a>
+
+                    @if (item.children?.length) {
+                      <button
+                        type="button"
+                        class="submenu-toggle"
+                        (click)="toggleSubmenu(i)"
+                        [attr.aria-expanded]="isSubmenuOpen(i)"
+                      >
+                        <img
+                          [class.rotated]="isSubmenuOpen(i)"
+                          src="assets/img/arrow.svg"
+                          alt=""
+                          width="12"
+                          height="12"
+                        >
+                      </button>
+                    }
+                  </div>
+
+                  @if (isSubmenuOpen(i) && item.children?.length) {
+                    <ul class="mobile-sub-menu">
+                      @for (child of item.children; track child.path) {
+                        <li class="sub-nav-item">
+                          <div class="info">
+                            <div class="title">
+                              <img
+                                class="icon"
+                                [src]="'assets/img/' + child.icon + '.svg'"
+                                [alt]="child.name"
+                                width="16"
+                                height="16"
+                              >
+                              <a
+                                class="child-name"
+                                [routerLink]="child.path"
+                                (click)="closeMobileMenu()"
+                              >{{ child.name }}</a>
+                            </div>
+                            <p class="desc">{{ child.desc }}</p>
+                          </div>
+                          <a [routerLink]="child.path" (click)="closeMobileMenu()">
+                            <img
+                              class="menu-arrow"
+                              src="assets/img/arrow.svg"
+                              alt=""
+                              width="12"
+                              height="12"
+                            >
+                          </a>
+                        </li>
+                      }
+                    </ul>
+                  }
+                </li>
+              }
+            </ul>
+          </nav>
+        </div>
+      }
+    </div>
+  </div>
+</header>
