@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, LOCALE_ID, signal } from '@angular/core';
+import { catchError, EMPTY } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { SiteApiResponse } from '../models/site-api-response.interface';
 import { SiteInfo } from '../models/site-info.interface';
@@ -30,24 +31,27 @@ export class SiteService {
 
     this.#http
       .get<SiteApiResponse>(`${environment.apiUrl}/options/list`, { params: { lang } })
-      .subscribe({
-        next: (res) => {
-          this.siteInfo.set({
-            email: res.email || this.siteInfo().email,
-            phone: res.phone || this.siteInfo().phone,
-            phoneTel: (res.phone || this.siteInfo().phone).replace(/\D/g, ''),
-            address: res.address || this.siteInfo().address,
-          });
+      .pipe(
+        catchError((err) => {
+          console.warn('Failed to load site info:', err);
+          return EMPTY;
+        }),
+      )
+      .subscribe((res) => {
+        this.siteInfo.set({
+          email: res.email || this.siteInfo().email,
+          phone: res.phone || this.siteInfo().phone,
+          phoneTel: (res.phone || this.siteInfo().phone).replace(/\D/g, ''),
+          address: res.address || this.siteInfo().address,
+        });
 
-          this.templateFormsId.set({
-            bookACallForm: res.book_a_call_form || this.templateFormsId().bookACallForm,
-            briefForm: res.brief_form || this.templateFormsId().briefForm,
-            callbackForm: res.callback_form || this.templateFormsId().callbackForm,
-            jobForm: res.job_form || this.templateFormsId().jobForm,
-            subscribeForm: res.subscribe_form || this.templateFormsId().subscribeForm,
-          });
-        },
-        error: (err) => console.warn('Failed to load site info:', err),
+        this.templateFormsId.set({
+          bookACallForm: res.book_a_call_form || this.templateFormsId().bookACallForm,
+          briefForm: res.brief_form || this.templateFormsId().briefForm,
+          callbackForm: res.callback_form || this.templateFormsId().callbackForm,
+          jobForm: res.job_form || this.templateFormsId().jobForm,
+          subscribeForm: res.subscribe_form || this.templateFormsId().subscribeForm,
+        });
       });
   }
 }

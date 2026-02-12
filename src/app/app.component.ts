@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { LangSwitcherComponent } from './layout/lang-switcher/lang-switcher.component';
 import { SiteService } from './core/services/site.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FooterComponent, LangSwitcherComponent],
+  imports: [RouterOutlet, NavBarComponent, FooterComponent, LangSwitcherComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

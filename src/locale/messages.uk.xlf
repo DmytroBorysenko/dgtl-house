@@ -68,6 +68,293 @@
         <source>The page you are looking for does not exist or has been moved.</source>
         <target>Сторінка, яку ви шукаєте, не існує або була переміщена.</target>
       </trans-unit>
+      <trans-unit id="nav.home" datatype="html">
+        <source>Home</source>
+        <target>Головна</target>
+      </trans-unit>
+      <trans-unit id="nav.about" datatype="html">
+        <source>About</source>
+        <target>Про нас</target>
+      </trans-unit>
+      <trans-unit id="nav.contact" datatype="html">
+        <source>Contact</source>
+        <target>Контакти</target>
+      </trans-unit>
+      <trans-unit id="nav.work" datatype="html">
+        <source>Work</source>
+        <target>Роботи</target>
+      </trans-unit>
+      <trans-unit id="nav.cases" datatype="html">
+        <source>Cases</source>
+        <target>Кейси</target>
+      </trans-unit>
+      <trans-unit id="nav.inHouseTools" datatype="html">
+        <source>In-house Tools</source>
+        <target>Власні інструменти</target>
+      </trans-unit>
+      <trans-unit id="nav.reviews" datatype="html">
+        <source>Reviews</source>
+        <target>Відгуки</target>
+      </trans-unit>
+      <trans-unit id="nav.services" datatype="html">
+        <source>Services</source>
+        <target>Послуги</target>
+      </trans-unit>
+      <trans-unit id="nav.seo" datatype="html">
+        <source>SEO</source>
+        <target>SEO</target>
+      </trans-unit>
+      <trans-unit id="nav.ppc" datatype="html">
+        <source>PPC</source>
+        <target>PPC</target>
+      </trans-unit>
+      <trans-unit id="nav.displayAds" datatype="html">
+        <source>Display Ads</source>
+        <target>Медійна реклама</target>
+      </trans-unit>
+      <trans-unit id="nav.emailMarketing" datatype="html">
+        <source>Email Marketing</source>
+        <target>Email маркетинг</target>
+      </trans-unit>
+      <trans-unit id="nav.webDev" datatype="html">
+        <source>Web Development</source>
+        <target>Веб-розробка</target>
+      </trans-unit>
+      <trans-unit id="nav.analytics" datatype="html">
+        <source>Analytics</source>
+        <target>Аналітика</target>
+      </trans-unit>
+      <trans-unit id="nav.serm" datatype="html">
+        <source>SERM</source>
+        <target>SERM</target>
+      </trans-unit>
+      <trans-unit id="nav.strategy" datatype="html">
+        <source>Strategy</source>
+        <target>Стратегія</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.cases" datatype="html">
+        <source>Our successful projects and client results</source>
+        <target>Наші успішні проєкти та результати клієнтів</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.inHouseTools" datatype="html">
+        <source>Proprietary tools we built for better results</source>
+        <target>Власні інструменти для кращих результатів</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.reviews" datatype="html">
+        <source>What our clients say about working with us</source>
+        <target>Що кажуть наші клієнти про співпрацю з нами</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.seo" datatype="html">
+        <source>Search engine optimization to grow organic traffic</source>
+        <target>Пошукова оптимізація для зростання органічного трафіку</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.ppc" datatype="html">
+        <source>Pay-per-click advertising for immediate results</source>
+        <target>Контекстна реклама для швидких результатів</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.displayAds" datatype="html">
+        <source>Banner and display advertising campaigns</source>
+        <target>Банерні та медійні рекламні кампанії</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.emailMarketing" datatype="html">
+        <source>Email campaigns that engage and convert</source>
+        <target>Email кампанії, що залучають та конвертують</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.webDev" datatype="html">
+        <source>Custom websites built for performance</source>
+        <target>Сайти, створені для максимальної продуктивності</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.analytics" datatype="html">
+        <source>Data-driven insights and reporting</source>
+        <target>Аналітика та звітність на основі даних</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.serm" datatype="html">
+        <source>Search engine reputation management</source>
+        <target>Управління репутацією в пошукових системах</target>
+      </trans-unit>
+      <trans-unit id="nav.desc.strategy" datatype="html">
+        <source>Comprehensive digital marketing strategy</source>
+        <target>Комплексна стратегія цифрового маркетингу</target>
+      </trans-unit>
+      <!-- Shared -->
+      <trans-unit id="comingSoon" datatype="html">
+        <source>Coming Soon</source>
+        <target>Незабаром</target>
+      </trans-unit>
+      <!-- Work pages -->
+      <trans-unit id="work.title" datatype="html">
+        <source>Work</source>
+        <target>Роботи</target>
+      </trans-unit>
+      <trans-unit id="work.meta.title" datatype="html">
+        <source>Work — DGTL House</source>
+        <target>Роботи — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="work.meta.description" datatype="html">
+        <source>Explore our work — cases, tools, and client reviews.</source>
+        <target>Наші роботи — кейси, інструменти та відгуки клієнтів.</target>
+      </trans-unit>
+      <trans-unit id="cases.title" datatype="html">
+        <source>Cases</source>
+        <target>Кейси</target>
+      </trans-unit>
+      <trans-unit id="cases.meta.title" datatype="html">
+        <source>Cases — DGTL House</source>
+        <target>Кейси — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="cases.meta.description" datatype="html">
+        <source>Our successful projects and client results.</source>
+        <target>Наші успішні проєкти та результати клієнтів.</target>
+      </trans-unit>
+      <trans-unit id="inHouseTools.title" datatype="html">
+        <source>In-house Tools</source>
+        <target>Власні інструменти</target>
+      </trans-unit>
+      <trans-unit id="inHouseTools.meta.title" datatype="html">
+        <source>In-house Tools — DGTL House</source>
+        <target>Власні інструменти — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="inHouseTools.meta.description" datatype="html">
+        <source>Proprietary tools we built for better results.</source>
+        <target>Власні інструменти для кращих результатів.</target>
+      </trans-unit>
+      <trans-unit id="reviews.title" datatype="html">
+        <source>Reviews</source>
+        <target>Відгуки</target>
+      </trans-unit>
+      <trans-unit id="reviews.meta.title" datatype="html">
+        <source>Reviews — DGTL House</source>
+        <target>Відгуки — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="reviews.meta.description" datatype="html">
+        <source>What our clients say about working with us.</source>
+        <target>Що кажуть наші клієнти про співпрацю з нами.</target>
+      </trans-unit>
+      <!-- Services pages -->
+      <trans-unit id="services.title" datatype="html">
+        <source>Services</source>
+        <target>Послуги</target>
+      </trans-unit>
+      <trans-unit id="services.meta.title" datatype="html">
+        <source>Services — DGTL House</source>
+        <target>Послуги — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="services.meta.description" datatype="html">
+        <source>Full range of digital marketing services.</source>
+        <target>Повний спектр послуг цифрового маркетингу.</target>
+      </trans-unit>
+      <trans-unit id="seo.title" datatype="html">
+        <source>SEO</source>
+        <target>SEO</target>
+      </trans-unit>
+      <trans-unit id="seo.meta.title" datatype="html">
+        <source>SEO — DGTL House</source>
+        <target>SEO — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="seo.meta.description" datatype="html">
+        <source>Search engine optimization to grow organic traffic.</source>
+        <target>Пошукова оптимізація для зростання органічного трафіку.</target>
+      </trans-unit>
+      <trans-unit id="ppc.title" datatype="html">
+        <source>PPC</source>
+        <target>PPC</target>
+      </trans-unit>
+      <trans-unit id="ppc.meta.title" datatype="html">
+        <source>PPC — DGTL House</source>
+        <target>PPC — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="ppc.meta.description" datatype="html">
+        <source>Pay-per-click advertising for immediate results.</source>
+        <target>Контекстна реклама для швидких результатів.</target>
+      </trans-unit>
+      <trans-unit id="displayAds.title" datatype="html">
+        <source>Display Ads</source>
+        <target>Медійна реклама</target>
+      </trans-unit>
+      <trans-unit id="displayAds.meta.title" datatype="html">
+        <source>Display Ads — DGTL House</source>
+        <target>Медійна реклама — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="displayAds.meta.description" datatype="html">
+        <source>Banner and display advertising campaigns.</source>
+        <target>Банерні та медійні рекламні кампанії.</target>
+      </trans-unit>
+      <trans-unit id="emailMarketing.title" datatype="html">
+        <source>Email Marketing</source>
+        <target>Email маркетинг</target>
+      </trans-unit>
+      <trans-unit id="emailMarketing.meta.title" datatype="html">
+        <source>Email Marketing — DGTL House</source>
+        <target>Email маркетинг — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="emailMarketing.meta.description" datatype="html">
+        <source>Email campaigns that engage and convert.</source>
+        <target>Email кампанії, що залучають та конвертують.</target>
+      </trans-unit>
+      <trans-unit id="webDev.title" datatype="html">
+        <source>Web Development</source>
+        <target>Веб-розробка</target>
+      </trans-unit>
+      <trans-unit id="webDev.meta.title" datatype="html">
+        <source>Web Development — DGTL House</source>
+        <target>Веб-розробка — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="webDev.meta.description" datatype="html">
+        <source>Custom websites built for performance.</source>
+        <target>Сайти, створені для максимальної продуктивності.</target>
+      </trans-unit>
+      <trans-unit id="analytics.title" datatype="html">
+        <source>Analytics</source>
+        <target>Аналітика</target>
+      </trans-unit>
+      <trans-unit id="analytics.meta.title" datatype="html">
+        <source>Analytics — DGTL House</source>
+        <target>Аналітика — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="analytics.meta.description" datatype="html">
+        <source>Data-driven insights and reporting.</source>
+        <target>Аналітика та звітність на основі даних.</target>
+      </trans-unit>
+      <trans-unit id="serm.title" datatype="html">
+        <source>SERM</source>
+        <target>SERM</target>
+      </trans-unit>
+      <trans-unit id="serm.meta.title" datatype="html">
+        <source>SERM — DGTL House</source>
+        <target>SERM — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="serm.meta.description" datatype="html">
+        <source>Search engine reputation management.</source>
+        <target>Управління репутацією в пошукових системах.</target>
+      </trans-unit>
+      <trans-unit id="strategy.title" datatype="html">
+        <source>Strategy</source>
+        <target>Стратегія</target>
+      </trans-unit>
+      <trans-unit id="strategy.meta.title" datatype="html">
+        <source>Strategy — DGTL House</source>
+        <target>Стратегія — DGTL House</target>
+      </trans-unit>
+      <trans-unit id="strategy.meta.description" datatype="html">
+        <source>Comprehensive digital marketing strategy.</source>
+        <target>Комплексна стратегія цифрового маркетингу.</target>
+      </trans-unit>
+      <trans-unit id="nav.ariaMainNav" datatype="html">
+        <source>Main navigation</source>
+        <target>Головна навігація</target>
+      </trans-unit>
+      <trans-unit id="nav.ariaToggleMenu" datatype="html">
+        <source>Toggle menu</source>
+        <target>Відкрити меню</target>
+      </trans-unit>
+      <trans-unit id="nav.ariaCloseMenu" datatype="html">
+        <source>Close menu</source>
+        <target>Закрити меню</target>
+      </trans-unit>
+      <trans-unit id="nav.ariaMobileNav" datatype="html">
+        <source>Mobile navigation</source>
+        <target>Мобільна навігація</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

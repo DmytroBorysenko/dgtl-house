@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://dgtl-house.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dgtl-house.com/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://dgtl-house.com/ua"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dgtl-house.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dgtl-house.com/about"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://dgtl-house.com/ua/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dgtl-house.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dgtl-house.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://dgtl-house.com/ua/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dgtl-house.com/ua</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://dgtl-house.com/ua"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dgtl-house.com/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dgtl-house.com/ua/about</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://dgtl-house.com/ua/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dgtl-house.com/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dgtl-house.com/ua/contact</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://dgtl-house.com/ua/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dgtl-house.com/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

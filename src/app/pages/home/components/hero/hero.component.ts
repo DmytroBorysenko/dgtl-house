@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'dgtl-hero',
@@ -11,8 +11,7 @@ import { Component } from '@angular/core';
         effectively</p>
     </section>
   `,
-  styleUrl: './hero.component.scss'
+  styleUrl: './hero.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeroComponent {
-
-}
+export class HeroComponent {}
