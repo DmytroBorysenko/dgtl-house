@@ -134,6 +134,260 @@
       <trans-unit id="nav.desc.strategy" datatype="html">
         <source>Comprehensive digital marketing strategy</source>
       </trans-unit>
+      <!-- Privacy Policy -->
+      <trans-unit id="privacyPolicy.title" datatype="html">
+        <source>Privacy Policy</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.meta.title" datatype="html">
+        <source>Privacy Policy — DGTL House</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.meta.description" datatype="html">
+        <source>DGTL House Privacy Policy. Learn how we collect, use, and protect your personal data, cookies, and your rights.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.intro" datatype="html">
+        <source>At DGTL HOUSE INC, we respect your privacy. This Privacy Policy explains what personal data is, what types of personal data we collect, how and why we collect it, how it is processed, and what rights you have regarding your information. You can be confident that your personal data is handled securely and responsibly.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.personalData.title" datatype="html">
+        <source>What is personal data?</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.personalData.text" datatype="html">
+        <source>Personal data refers to any information that can identify you as an individual — such as your name, email address, or phone number.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dataCollection.title" datatype="html">
+        <source>Personal data we collect and process</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dataCollection.text" datatype="html">
+        <source>When you engage with DGTL HOUSE INC, we may collect and process your personal data. This includes:</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dataCollection.direct.title" datatype="html">
+        <source>1. Information you provide directly</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dataCollection.direct.text" datatype="html">
+        <source>We collect information you share with us voluntarily — for example, when you fill out a contact form, send us an email, or call us. This may include your name, email address, phone number, and any message you submit.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dataCollection.auto.title" datatype="html">
+        <source>2. Information collected automatically</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dataCollection.auto.text" datatype="html">
+        <source>We use industry-standard technologies to automatically collect data about your interaction with our website. This includes device type, operating system, browser type, IP address, approximate geographic location, and pages visited. This data is not shared with third parties but may be used internally for marketing and performance analysis.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dataCollection.thirdParty.title" datatype="html">
+        <source>3. Information from third-party sources</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dataCollection.thirdParty.text" datatype="html">
+        <source>We may collect data through external platforms, such as social media, when you interact with us there. This information is protected in line with this Privacy Policy and any additional policies of the originating platform. We also use tools like Google Analytics, Google Search Console, Ahrefs, and SEMrush to analyze website performance and traffic data for internal research and client projects.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.whyCollect.title" datatype="html">
+        <source>Why we collect this information</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.whyCollect.text" datatype="html">
+        <source>We collect your data to personalize your experience with our services, website, and marketing content (e.g., social media, email campaigns, Google Ads). Your data helps us provide more relevant information and improve our services. Your information will never be sold or transferred to external parties without your consent, except when needed to deliver our services or enhance functionality.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.storage.title" datatype="html">
+        <source>Where we store and process your personal data</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.storage.text" datatype="html">
+        <source>Your data may be stored or processed in your region or in countries where DGTL HOUSE INC or its partners operate. We implement necessary safeguards to ensure your information is protected, including during international transfers.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.title" datatype="html">
+        <source>Disclosure of your personal data to third parties</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.text" datatype="html">
+        <source>We only share your data in the following cases:</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.legal.title" datatype="html">
+        <source>Legal obligations</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.legal.text" datatype="html">
+        <source>If required by law, regulation, or legal process.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.group.title" datatype="html">
+        <source>Within our group</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.group.text" datatype="html">
+        <source>To provide services and ensure consistent quality.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.providers.title" datatype="html">
+        <source>With service providers</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.providers.text" datatype="html">
+        <source>For functions like billing, IT support, marketing, hosting, legal, and analytics. These vendors are contractually bound to confidentiality and cannot use your data for other purposes.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.claims.title" datatype="html">
+        <source>Legal claims</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.claims.text" datatype="html">
+        <source>To defend the legal rights of DGTL HOUSE INC.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.business.title" datatype="html">
+        <source>Business transitions</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.business.text" datatype="html">
+        <source>In the event of a merger, acquisition, or restructuring.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.consent.title" datatype="html">
+        <source>With your consent</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.disclosure.consent.text" datatype="html">
+        <source>In any other case, only with your explicit approval.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.retention.title" datatype="html">
+        <source>Retention of your personal data</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.retention.text" datatype="html">
+        <source>We retain personal data as long as necessary to deliver services, comply with legal obligations, resolve disputes, and operate our business. Retention periods vary based on the type of data and purpose of use.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.retention.contact" datatype="html">
+        <source>For specific questions about data retention, contact us at: marketing@dgtl-house.com</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.title" datatype="html">
+        <source>Cookies</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.text" datatype="html">
+        <source>We use cookies and similar technologies (like pixels and tags) to improve your experience, remember your preferences, analyze site usage, and deliver tailored content.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.typesTitle" datatype="html">
+        <source>Types of cookies we use:</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.necessary.title" datatype="html">
+        <source>Strictly necessary cookies</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.necessary.text" datatype="html">
+        <source>Essential for basic site functions.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.performance.title" datatype="html">
+        <source>Performance cookies</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.performance.text" datatype="html">
+        <source>Help us understand how users interact with the site.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.functional.title" datatype="html">
+        <source>Functional cookies</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.functional.text" datatype="html">
+        <source>Store preferences like language or region.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.thirdParty.title" datatype="html">
+        <source>Third-party cookies</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.thirdParty.text" datatype="html">
+        <source>From platforms like Google or Facebook to improve advertising relevance.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.analytics.title" datatype="html">
+        <source>Analytics cookies</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.analytics.text" datatype="html">
+        <source>Track behavior to optimize content and UX (e.g., Google Analytics).</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.controlTitle" datatype="html">
+        <source>How to control cookie settings</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.controlText" datatype="html">
+        <source>You can manage cookie preferences in your browser settings. Restricting cookies may affect site functionality or personalization.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.cookies.dnt" datatype="html">
+        <source>Some browsers support "Do Not Track" (DNT) signals, but DGTL HOUSE INC currently does not respond to them. We continue to handle your data in line with this policy.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.pixels.title" datatype="html">
+        <source>Pixels</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.pixels.text" datatype="html">
+        <source>We may use tracking pixels in emails (if you've opted in) to understand engagement, and third-party pixels (e.g., Facebook, Google) to deliver relevant advertising. As we adopt new technologies, we may collect similar data through other tools.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.security.title" datatype="html">
+        <source>Security</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.security.text" datatype="html">
+        <source>We take your privacy seriously. DGTL HOUSE INC follows industry best practices to secure your data, including encryption (TLS) for information in transit. However, no system is 100% secure — we do our best, but we cannot guarantee absolute protection.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.rights.title" datatype="html">
+        <source>Your rights</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.rights.text" datatype="html">
+        <source>If you are located in the EU or a jurisdiction with similar privacy regulations, you may have the right to access, correct, or delete your personal data, subject to legal limitations.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.rights.contact" datatype="html">
+        <source>To exercise your rights, please contact us at: marketing@dgtl-house.com. We may require identity verification before processing your request.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dpo.title" datatype="html">
+        <source>Data Protection Officer</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.dpo.text" datatype="html">
+        <source>To reach our Data Protection Officer, email: marketing@dgtl-house.com</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.children.title" datatype="html">
+        <source>Use by children</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.children.text1" datatype="html">
+        <source>Our services are not intended for users under 16 years of age. We do not knowingly collect personal data from children.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.children.text2" datatype="html">
+        <source>Minors must obtain parental or guardian consent before using our services or submitting personal data.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.children.text3" datatype="html">
+        <source>If we become aware that a child has provided us with data, we will delete it immediately.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.changes.title" datatype="html">
+        <source>Changes to this Privacy Policy</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.changes.text1" datatype="html">
+        <source>We may update this policy to reflect changes in our services, legal requirements, or user feedback. We encourage you to review it periodically.</source>
+      </trans-unit>
+      <trans-unit id="privacyPolicy.changes.text2" datatype="html">
+        <source>If we make significant updates, we'll notify you via our website or email.</source>
+      </trans-unit>
+      <!-- Cookie Consent -->
+      <trans-unit id="consent.header" datatype="html">
+        <source>We value your privacy</source>
+      </trans-unit>
+      <trans-unit id="consent.message" datatype="html">
+        <source>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</source>
+      </trans-unit>
+      <trans-unit id="consent.customizeTitle" datatype="html">
+        <source>Customize Your Cookie Preferences</source>
+      </trans-unit>
+      <trans-unit id="consent.necessary" datatype="html">
+        <source>Necessary Cookies</source>
+      </trans-unit>
+      <trans-unit id="consent.alwaysActive" datatype="html">
+        <source>Always Active</source>
+      </trans-unit>
+      <trans-unit id="consent.necessaryDesc" datatype="html">
+        <source>These cookies are essential for the website to function properly and cannot be disabled.</source>
+      </trans-unit>
+      <trans-unit id="consent.analytics" datatype="html">
+        <source>Analytics Cookies</source>
+      </trans-unit>
+      <trans-unit id="consent.analyticsDesc" datatype="html">
+        <source>These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</source>
+      </trans-unit>
+      <trans-unit id="consent.marketing" datatype="html">
+        <source>Marketing Cookies</source>
+      </trans-unit>
+      <trans-unit id="consent.marketingDesc" datatype="html">
+        <source>These cookies are used to track visitors across websites to display relevant and engaging advertisements.</source>
+      </trans-unit>
+      <trans-unit id="consent.functional" datatype="html">
+        <source>Functional Cookies</source>
+      </trans-unit>
+      <trans-unit id="consent.functionalDesc" datatype="html">
+        <source>These cookies enable enhanced functionality and personalization, such as videos, live chat, and other interactive features.</source>
+      </trans-unit>
+      <trans-unit id="consent.customize" datatype="html">
+        <source>Customize</source>
+      </trans-unit>
+      <trans-unit id="consent.rejectAll" datatype="html">
+        <source>Reject All</source>
+      </trans-unit>
+      <trans-unit id="consent.acceptAll" datatype="html">
+        <source>Accept All</source>
+      </trans-unit>
+      <trans-unit id="consent.back" datatype="html">
+        <source>Back</source>
+      </trans-unit>
+      <trans-unit id="consent.savePreferences" datatype="html">
+        <source>Save Preferences</source>
+      </trans-unit>
       <!-- Shared -->
       <trans-unit id="comingSoon" datatype="html">
         <source>Coming Soon</source>

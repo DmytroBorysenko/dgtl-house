@@ -1,0 +1,89 @@
+@if (visible()) {
+  <div class="consent">
+    <div class="consent__modal">
+      <div class="consent__header" i18n="@@consent.header">We value your privacy</div>
+
+      <div class="consent__content">
+        @if (!showCustomize()) {
+          <p class="consent__message" i18n="@@consent.message">We use cookies to enhance your browsing experience, serve
+            personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of
+            cookies.</p>
+        } @else {
+          <div class="consent__customize">
+            <div class="consent__pref-title" i18n="@@consent.customizeTitle">Customize Your Cookie Preferences</div>
+
+            <div class="consent__pref-item">
+              <div class="consent__pref-header">
+                <span class="consent__pref-label" i18n="@@consent.necessary">Necessary Cookies</span>
+                <span class="consent__pref-status" i18n="@@consent.alwaysActive">Always Active</span>
+              </div>
+              <p class="consent__pref-desc" i18n="@@consent.necessaryDesc">These cookies are essential for the website
+                to function properly and cannot be disabled.</p>
+            </div>
+
+            <div class="consent__pref-item">
+              <div class="consent__pref-header">
+                <span class="consent__pref-label" i18n="@@consent.analytics">Analytics Cookies</span>
+                <label class="consent__toggle">
+                  <input type="checkbox" [checked]="customPrefs().analytics" (change)="togglePref('analytics')"/>
+                  <span class="consent__slider"></span>
+                </label>
+              </div>
+              <p class="consent__pref-desc" i18n="@@consent.analyticsDesc">These cookies help us understand how visitors
+                interact with our website by collecting and reporting information anonymously.</p>
+            </div>
+
+            <div class="consent__pref-item">
+              <div class="consent__pref-header">
+                <span class="consent__pref-label" i18n="@@consent.marketing">Marketing Cookies</span>
+                <label class="consent__toggle">
+                  <input type="checkbox" [checked]="customPrefs().marketing" (change)="togglePref('marketing')"/>
+                  <span class="consent__slider"></span>
+                </label>
+              </div>
+              <p class="consent__pref-desc" i18n="@@consent.marketingDesc">These cookies are used to track visitors
+                across websites to display relevant and engaging advertisements.</p>
+            </div>
+
+            <div class="consent__pref-item">
+              <div class="consent__pref-header">
+                <span class="consent__pref-label" i18n="@@consent.functional">Functional Cookies</span>
+                <label class="consent__toggle">
+                  <input type="checkbox" [checked]="customPrefs().functional" (change)="togglePref('functional')"/>
+                  <span class="consent__slider"></span>
+                </label>
+              </div>
+              <p class="consent__pref-desc" i18n="@@consent.functionalDesc">These cookies enable enhanced functionality
+                and personalization, such as videos, live chat, and other interactive features.</p>
+            </div>
+          </div>
+        }
+      </div>
+
+      <div class="consent__footer">
+        @if (!showCustomize()) {
+          <div class="consent__buttons">
+            <button class="consent__btn consent__btn--secondary" (click)="toggleCustomize()" i18n="@@consent.customize">
+              Customize
+            </button>
+            <button class="consent__btn consent__btn--secondary" (click)="rejectAll()" i18n="@@consent.rejectAll">Reject
+              All
+            </button>
+            <button class="consent__btn consent__btn--primary" (click)="acceptAll()" i18n="@@consent.acceptAll">Accept
+              All
+            </button>
+          </div>
+        } @else {
+          <div class="consent__buttons">
+            <button class="consent__btn consent__btn--secondary" (click)="toggleCustomize()" i18n="@@consent.back">
+              Back
+            </button>
+            <button class="consent__btn consent__btn--primary" (click)="saveCustom()" i18n="@@consent.savePreferences">
+              Save Preferences
+            </button>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+}

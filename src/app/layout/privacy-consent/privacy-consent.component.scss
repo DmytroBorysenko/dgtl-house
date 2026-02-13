@@ -1,0 +1,206 @@
+@use 'sass:map';
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+.consent {
+  position: fixed;
+  bottom: 3.5rem;
+  right: 3.5rem;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease-in-out;
+
+  &__modal {
+    position: relative;
+    background: map.get($colors, card-bg);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    width: 30rem;
+    animation: slideUp 0.3s ease-out;
+  }
+
+  &__header {
+    @include font-bold;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    color: map.get($colors, white);
+  }
+
+  &__content {
+    color: map.get($colors, gray-text);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  &__message {
+    color: map.get($colors, gray-text);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  &__pref-title {
+    @include font-bold;
+    font-size: 1.125rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    color: map.get($colors, white);
+  }
+
+  &__pref-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__pref-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__pref-label {
+    color: map.get($colors, white);
+  }
+
+  &__pref-status {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.75rem;
+    background-color: map.get($colors, primary);
+    color: map.get($colors, white);
+  }
+
+  &__pref-desc {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: map.get($colors, gray-text);
+    margin: 0;
+  }
+
+  &__toggle {
+    position: relative;
+    display: inline-block;
+    width: 3.125rem;
+    height: 1.5rem;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked + .consent__slider {
+        background-color: map.get($colors, primary);
+      }
+
+      &:checked + .consent__slider::before {
+        transform: translateX(1.625rem);
+      }
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: map.get($colors, gray-1);
+    transition: 0.3s;
+    border-radius: 1.5rem;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 1.125rem;
+      width: 1.125rem;
+      left: 0.1875rem;
+      bottom: 0.1875rem;
+      background-color: map.get($colors, white);
+      transition: 0.3s;
+      border-radius: 50%;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 0.825rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__btn {
+    padding: 0.825rem;
+    border-radius: 6.25rem;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 33%;
+    color: map.get($colors, white);
+    border: 1px solid map.get($colors, border);
+
+    &--primary {
+      background: map.get($colors, primary);
+      border-color: map.get($colors, primary);
+
+      &:hover {
+        background: map.get($colors, primary-hover);
+        border-color: map.get($colors, primary-hover);
+      }
+    }
+
+    &--secondary {
+      background: map.get($colors, card-bg);
+
+      &:hover {
+        background: map.get($colors, border);
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.875rem) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: map.get($breakpoints, sm)) {
+  .consent {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+
+    &__modal {
+      padding: 1.5rem;
+      width: 100%;
+    }
+
+    &__header {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@use 'sass:map';
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+:host {
+  display: block;
+}
+
+.policy {
+  padding-bottom: 4rem;
+
+  h1 {
+    @include font-bold;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    @include respond(sm) {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.intro {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: map.get($colors, gray-text);
+  margin-bottom: 2.5rem;
+  max-width: 50rem;
+}
+
+.content {
+  max-width: 50rem;
+}
+
+.block {
+  margin-bottom: 2rem;
+
+  h2 {
+    @include font-bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    @include font-bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    @include font-bold;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: map.get($colors, gray-text);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 4px solid map.get($colors, primary);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h3,
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+  }
+}
